@@ -1,0 +1,23 @@
+$my_string_variable = "Hello, World!"
+$my_string_variable
+$my_input = Read-Host -Prompt "Введите число"
+
+Типы переменных
+    Int: целые числа, например 2, -5, 99
+    String: ноль или более символов, заключенных в двойные кавычки, например "Hackademy!", "3X4mP|3".
+    Boolean: два возможных значения: $True и $False
+    Array: набор элементов, например: [25, "красный", $False, 16.30]
+
+PowerShell присваивает тип переменной в зависимости от значения, которое мы ей присваиваем.
+Это называется динамической типизацией.
+По умолчанию тип любой неинициализированной переменной - $null.
+
+$my_string_variable = "Hello, World!"
+$my_string_variable.GetType().Name
+
+[Int]$age = 25
+$age
+
+$i = $j = $k = 0
+$number, $color, $bool = 25, "red", $false
+

@@ -1,2 +1,2 @@
-Write-Host "Все команды, действующие на хост:". 
+Write-Host "Все команды, действующие на хост:" 
 Get-Command -Noun Host
