@@ -1,0 +1,14 @@
+Get-Date
+Write-Host "Hello, World!"
+Get-Command
+Get-Command -Verb Get
+Get-Command -Noun Host
+Get-Help
+Get-History
+Get-Host
+
+# scripts
+Write-Host "Все команды, действующие на хост:". 
+Get-Command -Noun Host
+
+.\host-commands.ps1
