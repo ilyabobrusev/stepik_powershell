@@ -1,0 +1,8 @@
+Get-ChildItem Env:
+(Get-ChildItem Env:windir).Value
+$Env:windir
+$Env:EXAMPLE_ENV_VAR = "пользовательское значение"
+По традиции имена переменных окружения обычно пишутся с заглавной буквы.
+
+$ENV:EXAMPLE_ENV_VAR
+
