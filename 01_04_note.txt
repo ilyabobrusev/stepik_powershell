@@ -1,0 +1,42 @@
+PS > 5 + 5
+10
+
+PS > 25 % 3 # 25/3 = 8 остаток 1
+1
+
+PS > $number = 25
+PS > $number / 5
+5
+
+PS > $number = $number * 3
+PS > $number
+75
+
+PS > $ab= "a" + "b"
+PS > $punctuation = "!" * 3
+PS > $ab+ $punctuation
+ab!!!
+
+PS > $number = 75
+PS > $number_1 = $number / 3
+PS > $number_1
+25
+
+PS > $number_2 = $number
+PS > $number_2 /= 3
+PS > $number_2
+25
+
+PS > $Env:EXAMPLE_ENV_VAR = "пользовательское значение"
+PS > $Env:EXAMPLE_ENV_VAR += "; другое значение"
+PS > $Env:EXAMPLE_ENV_VAR
+пользовательское значение; другое значение
+
+PS > $i = 0
+PS > $i++
+PS > $i
+1
+
+PS > $i--
+PS > $i
+0
