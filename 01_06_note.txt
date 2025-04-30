@@ -1,0 +1,11 @@
+
+    ( )
+    ++ --
+    ! -not
+    * / %
+    + -
+    -is -isnot -as
+    -eq -ne -gt -ge -lt -le
+    -contains -notContains
+    -and -or -xor
+    = += -= *= /= %=
