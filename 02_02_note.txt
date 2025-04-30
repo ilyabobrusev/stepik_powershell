@@ -1,0 +1,13 @@
+PS > $my_string = "abcd"
+PS > $my_string.Contains("ab")
+True
+
+PS > $my_string = "Hello, World!"
+PS > $my_string.Replace("World", "peace")
+Hello, peace!
+PS > $my_string.Replace(", World", "")
+Hello!
+
+PS > $num = 4
+PS > $num.GetType().Name
+Int
