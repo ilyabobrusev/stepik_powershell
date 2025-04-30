@@ -1,0 +1,8 @@
+Get-Member -InputObject "abcdefg"
+"abcdefg" | Get-Member
+
+PS > "hello" | Get-Member -MemberType Property
+PS > Get-Member -InputObject "abcdefg" -MemberType Property
+
+PS > "hello".Length
+5
