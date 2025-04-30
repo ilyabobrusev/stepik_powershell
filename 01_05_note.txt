@@ -1,0 +1,61 @@
+(eq - equal, ne - not equal, ge - greater or equal and etc.)
+    -eq Проверяет, являются ли два значения операнда точным совпадением
+    -ne Проверяет, не являются ли два значения операнда точным совпадением
+    -gt Проверяет, больше ли значение левого операнда, чем значение правого операнда
+    -lt Проверяет, если значение левого операнда меньше значения правого операнда
+    -ge Проверяет, что значение левого операнда больше ИЛИ равно значению правого операнда
+    -le Проверяет, меньше ли значение левого операнда ИЛИ равно значению правого операнда.
+
+
+PS > $my_num = 5
+PS > $my_num -eq 5
+True
+
+PS > $my_num -ne 5
+False
+
+PS > "помидор" -ne "овощ"
+True
+
+PS > 7 -gt 2
+True
+
+PS > 42 -lt 42
+False
+
+PS > 3 -ge 6
+False
+
+PS > 42 -le 42
+True
+
+
+x y x -and y x -or y x -xor y -not x
+T T T           T         F       F
+T F F           T         T       F
+F T F           T         T       T
+F F F           F         F       T
+
+PS > -5 -lt 7 -and "hello" -eq "hello"
+True
+
+PS > -5 -lt 7 -and "hello" -eq "world"
+False
+
+PS > 42 -le 13 -or 5 -ge 5
+True
+
+PS > 42 -le 13 -or 5 -gt 5
+False
+
+PS > 25 -gt 2 -xor "hello" -eq "world"
+True
+
+PS > 25 -gt 2 -xor "code" -eq "code"
+False
+
+PS > -not (2 -gt 5)
+True
+
+PS > !(17 -le 99)
+False
