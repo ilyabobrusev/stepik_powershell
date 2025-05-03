@@ -1,0 +1,15 @@
+$dog = New-Object -TypeName PSCustomObject
+$dog | Get-Member
+
+$dog | Add-Member -MemberType NoteProperty -Name "Name" -Value "Rufus"
+$dog | Add-Member -MemberType NoteProperty -Name "Age" -Value 10
+
+$dog | Add-Member -MemberType ScriptMethod -Name "speak" -Value { Write-Host "Woof!"}
+
+$dog.speak()
+
+
+$dog = [PSCustomObject]@{
+    Name = "Rufusss"
+    Age = 20
+}
