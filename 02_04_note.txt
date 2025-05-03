@@ -1,0 +1,55 @@
+$my_arr = 25, "abcde", 1, $False
+$my_arr
+
+$arr_1 = @($True, 5, (Get-Date).DateTime) # 3 элемента
+$arr_2 = @( ) # пустой массив
+$arr_3 = @( # Многострочный массив
+    "Uno"
+    "Dos"
+    "Tres"
+)
+
+$colors = "red", "yellow", "black", "blue"
+$colors[2]
+
+$colors[1] = "brown"
+$colors
+
+$colors[0,2]
+$colors[1..3]
+$colors[2..1]
+$colors[-1]
+$colors.ForEach({ $PSItem.Length })
+
+$fibonacci = 0, 1, 1, 2, 3, 5
+$fib_2 = 8, 13, 21, 34
+$fibonacci + $fib_2
+$fib_2 * 2
+
+#################################################
+
+    -contains: <array> -contains <item>
+    -notcontains: <array> -notcontains <item>
+    -in: <item> -in <array>
+    -notin: <item> -notin <array>
+
+$fibonacci -contains 4
+5 -in $fibonacci
+
+
+$fibonacci = 0, 1, 1, 2, 3, 5
+$fibonacci = $fibonacci -join "->"
+$fibonacci
+$fibonacci.GetType().Name
+
+[String[]]$fruits = "apple", "banana", "kiwi"
+
+$dogs_arr = @(
+    [PSCustomObject]@{Name = 'Rufus'; Age = 10}
+    [PSCustomObject]@{Name = 'Miku'; Age = 2}
+)
+
+$dogs_arr[0]
+$dogs_arr[0].Name
+
+$dogs_arr.ForEach({ $_.Name + " is " + $_.Age + " years old."})
