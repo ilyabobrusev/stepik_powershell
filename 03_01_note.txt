@@ -1,0 +1,20 @@
+$myVar = 2
+if ($myVar -eq 2) { 
+  Write-Host "A True Statement"
+}
+
+$myVar = 2  
+if($myVar -lt 0) {
+  Write-Host "Отрицательное число"
+} else {
+  Write-Host "Положительное число"
+}
+
+$myVar = 2  
+if ($myVar -lt 0) {
+  Write-Host "Отрицательное число"
+} elseif ($myVar -gt 0) {
+  Write-Host "Положительное число"
+} else {
+  Write-Host "Ноль"
+}
