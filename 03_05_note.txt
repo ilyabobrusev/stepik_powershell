@@ -1,0 +1,17 @@
+for ($i = 0; $i -lt 5; $i++) {
+  if ($i -eq 2) {
+    break
+  }
+  Write-Host $i
+}
+
+##############################################
+
+for ($i = 0; $i -lt 5; $i++) {
+  if ($i -eq 2) {
+    continue
+  }
+  Write-Host $i
+}
+
+
