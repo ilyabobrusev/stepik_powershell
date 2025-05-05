@@ -1,0 +1,25 @@
+function greet1 {
+  param($name)
+  Write-Host "Hello, $name"
+}
+
+greet1 "Hackademy"
+
+##############################################
+
+function greet2 {
+  param($timeOfDay, $name)
+  Write-Host "Good $timeOfDay, $name"
+}
+
+greet2 "Evening" "Hackademy"
+
+
+##############################################
+
+function greet2 {
+  param($name, $timeOfDay = "morning")
+  Write-Host "Good $timeOfDay, $name"
+}
+
+greet2 "Hackademy"
