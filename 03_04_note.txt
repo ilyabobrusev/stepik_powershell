@@ -1,0 +1,21 @@
+$counter = 0
+while ($counter -lt 3) {
+  $counter++
+  Write-Host "Обязательно обновите счетчик"
+}
+
+##############################################
+
+$answer = 4
+do {
+  $input = Read-Host "Угадай мое число"
+} while ($input -ne $answer)
+Write-Host "Правильно!".
+
+##############################################
+
+$answer = 4
+do {
+  $input = Read-Host "Угадай мое число"
+} until ($input -eq $answer)
+Write-Host "Правильно!"
