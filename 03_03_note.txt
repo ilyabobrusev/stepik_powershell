@@ -1,0 +1,14 @@
+for ($i = 0; $i -lt 3; $i++) {
+  Write-Host "i равно ($i)"
+}
+
+##############################################
+
+$array = 51,12,31,4,15
+foreach ($element in $array) {
+  if ($element % 2 -eq 0) {
+    Write-Host $element "is" Even
+  } else {
+    Write-Host $element "is" Odd
+  }
+}
